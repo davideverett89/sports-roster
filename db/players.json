@@ -1,0 +1,56 @@
+{
+    "player1" : {
+        "imageUrl" : "https://securea.mlb.com/mlb/images/players/head_shot/425877@2x.jpg",
+        "name" : "Yadier Molina",
+        "position" : "Catcher",
+        "uid" : "z5Derri4BrTOwop3jrAIYJZVR9S2"
+    },
+    "player2" : {
+        "imageUrl" : "https://cdn.mlbtraderumors.com/files/2017/08/USATSI_9889410-687x1024.jpg",
+        "name" : "Jack Flaherty",
+        "position" : "Pitcher",
+        "uid" : "z5Derri4BrTOwop3jrAIYJZVR9S2"
+    },
+    "player3" : {
+        "imageUrl" : "https://securea.mlb.com/mlb/images/players/head_shot/502671.jpg",
+        "name" : "Paul Goldschmidt",
+        "position" : "First Base",
+        "uid" : "z5Derri4BrTOwop3jrAIYJZVR9S2"
+    },
+    "player4" : {
+        "imageUrl" : "https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/32061.png",
+        "name" : "Kolten Wong",
+        "position" : "Second Base",
+        "uid" : "z5Derri4BrTOwop3jrAIYJZVR9S2"
+    },
+    "player5" : {
+        "imageUrl" : "https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/35185.png",
+        "name" : "Paul DeJong",
+        "position" : "Short Stop",
+        "uid" : "z5Derri4BrTOwop3jrAIYJZVR9S2"
+    },
+    "player6" : {
+        "imageUrl" : "https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/31015.png",
+        "name" : "Matt Carpenter",
+        "position" : "Third Base",
+        "uid" : "z5Derri4BrTOwop3jrAIYJZVR9S2"
+    },
+    "player7" : {
+        "imageUrl" : "https://securea.mlb.com/mlb/images/players/head_shot/664056.jpg",
+        "name" : "Harrison Bader",
+        "position" : "Center Field",
+        "uid" : "z5Derri4BrTOwop3jrAIYJZVR9S2"
+    },
+    "player8" : {
+        "imageUrl" : "https://securea.mlb.com/mlb/images/players/head_shot/641933.jpg",
+        "name" : "Tyler O'Neill",
+        "position" : "Right Field",
+        "uid" : "z5Derri4BrTOwop3jrAIYJZVR9S2"
+    },
+    "player9" : {
+        "imageUrl" : "https://securea.mlb.com/mlb/images/players/head_shot/451594.jpg",
+        "name" : "Dexter Fowler",
+        "position" : "Left Field",
+        "uid" : "z5Derri4BrTOwop3jrAIYJZVR9S2"
+    }
+}
