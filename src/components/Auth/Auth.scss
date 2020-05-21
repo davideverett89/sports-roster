@@ -1,3 +1,10 @@
+@import '../../styles/variables';
+
 .Auth {
     display: block;
+    .auth-btn {
+        color: white;
+        background-color: $teamPrimaryColor;
+        border: 1px solid white;
+    }
 }
