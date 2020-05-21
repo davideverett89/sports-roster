@@ -1,0 +1,26 @@
+@import '../../styles/variables';
+
+.Player {
+    display: block;
+    margin: 20px 0;
+    .player-card {
+        background-color: $teamPrimaryColor;
+        border: 2px solid $teamPrimaryColor;
+        height: 400px;
+        .player-img {
+            height: auto; 
+            width: auto; 
+            max-width: 300px; 
+            max-height: 300px;
+            margin: 0 auto;
+        }
+        .player-card-body {
+            background-color: $teamSecondaryColor;
+            .player-name {
+                border-bottom: 1px solid white;
+                width: 50%;
+                margin: 0 auto;
+            }
+        }
+    }
+}

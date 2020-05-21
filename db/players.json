@@ -1,18 +1,18 @@
 {
     "player1" : {
-        "imageUrl" : "https://securea.mlb.com/mlb/images/players/head_shot/425877@2x.jpg",
+        "imageUrl" : "https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/5986.png",
         "name" : "Yadier Molina",
         "position" : "Catcher",
         "uid" : "z5Derri4BrTOwop3jrAIYJZVR9S2"
     },
     "player2" : {
-        "imageUrl" : "https://cdn.mlbtraderumors.com/files/2017/08/USATSI_9889410-687x1024.jpg",
+        "imageUrl" : "https://a.espncdn.com/i/headshots/mlb/players/full/33837.png",
         "name" : "Jack Flaherty",
         "position" : "Pitcher",
         "uid" : "z5Derri4BrTOwop3jrAIYJZVR9S2"
     },
     "player3" : {
-        "imageUrl" : "https://securea.mlb.com/mlb/images/players/head_shot/502671.jpg",
+        "imageUrl" : "https://a.espncdn.com/i/headshots/mlb/players/full/31027.png",
         "name" : "Paul Goldschmidt",
         "position" : "First Base",
         "uid" : "z5Derri4BrTOwop3jrAIYJZVR9S2"
@@ -36,19 +36,19 @@
         "uid" : "z5Derri4BrTOwop3jrAIYJZVR9S2"
     },
     "player7" : {
-        "imageUrl" : "https://securea.mlb.com/mlb/images/players/head_shot/664056.jpg",
+        "imageUrl" : "https://a.espncdn.com/i/headshots/mlb/players/full/35062.png",
         "name" : "Harrison Bader",
         "position" : "Center Field",
         "uid" : "z5Derri4BrTOwop3jrAIYJZVR9S2"
     },
     "player8" : {
-        "imageUrl" : "https://securea.mlb.com/mlb/images/players/head_shot/641933.jpg",
+        "imageUrl" : "https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/34168.png&w=350&h=254",
         "name" : "Tyler O'Neill",
         "position" : "Right Field",
         "uid" : "z5Derri4BrTOwop3jrAIYJZVR9S2"
     },
     "player9" : {
-        "imageUrl" : "https://securea.mlb.com/mlb/images/players/head_shot/451594.jpg",
+        "imageUrl" : "https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/29252.png",
         "name" : "Dexter Fowler",
         "position" : "Left Field",
         "uid" : "z5Derri4BrTOwop3jrAIYJZVR9S2"
