@@ -7,6 +7,12 @@
         background-color: $teamPrimaryColor;
         border: 2px solid $teamPrimaryColor;
         height: 400px;
+        .player-card-header {
+            background-color: $teamSecondaryColor;
+            .player-delete-button {
+                background-color: $teamPrimaryColor;
+            }
+        }
         .player-img {
             height: auto; 
             width: auto; 
