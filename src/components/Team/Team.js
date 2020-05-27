@@ -6,10 +6,12 @@ import playersData from '../../helpers/data/playersData';
 import authData from '../../helpers/data/authData';
 
 import Player from '../Player/Player';
+import PlayerForm from '../PlayerForm/PlayerForm';
 
 class Team extends React.Component {
   state = {
     players: [],
+    formOpen: false,
   }
 
   getPlayers = () => {
@@ -29,12 +31,14 @@ class Team extends React.Component {
   }
 
   render() {
-    const { players } = this.state;
+    const { players, formOpen } = this.state;
     const makePlayerCards = players.map((singlePlayer) => <Player key={singlePlayer.id} player={singlePlayer} removePlayer={this.removePlayer} />);
     return (
         <div className="Team">
             <h1 className="p-2 display-4 time-header">{moment().format('L')}</h1>
             <h2 className="m-2">Today's Starting Roster</h2>
+            <button className="btn new-player-btn" onClick={() => this.setState({ formOpen: true })}>Add New Player</button>
+            { formOpen ? <PlayerForm /> : ''}
             <div className="d-flex flex-wrap justify-content-center align-content-center">
                 {makePlayerCards}
             </div>
