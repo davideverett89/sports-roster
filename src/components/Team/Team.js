@@ -53,6 +53,10 @@ class Team extends React.Component {
       .catch((err) => console.error('There was a problem with deleting a player:', err));
   }
 
+  closeForm = () => {
+    this.setState({ formOpen: false });
+  }
+
   render() {
     const { players, formOpen, editPlayer } = this.state;
     const makePlayerCards = players.map((singlePlayer) => <Player key={singlePlayer.id} player={singlePlayer} removePlayer={this.removePlayer} editAPlayer={this.editAPlayer} />);
@@ -60,8 +64,8 @@ class Team extends React.Component {
         <div className="Team">
             <h1 className="p-2 display-4 time-header">{moment().format('L')}</h1>
             <h2 className="m-2">Today's Starting Roster</h2>
-            <button className="btn new-player-btn" onClick={() => this.setState({ formOpen: true })}>Add New Player</button>
-            { formOpen ? <PlayerForm saveNewPlayer={this.saveNewPlayer} player={editPlayer} putPlayer={this.putPlayer} /> : ''}
+            <button className="btn new-player-btn" onClick={() => this.setState({ formOpen: true, editPlayer: {} })}>Add New Player</button>
+            { formOpen ? <PlayerForm saveNewPlayer={this.saveNewPlayer} player={editPlayer} putPlayer={this.putPlayer} closeForm={this.closeForm} /> : ''}
             <div className="d-flex flex-wrap justify-content-center align-content-center">
                 {makePlayerCards}
             </div>

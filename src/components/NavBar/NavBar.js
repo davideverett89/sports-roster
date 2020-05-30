@@ -32,7 +32,7 @@ class NavBar extends React.Component {
                         <li className="nav-item active">
                             {
                                 authed
-                                  ? <button className="nav-link btn btn-light logout-btn" onClick={this.logMeOut}>Logout</button>
+                                  ? <button className="nav-link btn logout-btn" onClick={this.logMeOut}>Logout</button>
                                   : ''
                             }
                         </li>
