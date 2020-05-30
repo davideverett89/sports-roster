@@ -7,12 +7,27 @@ import authData from '../../helpers/data/authData';
 class PlayerForm extends React.Component {
   static propTypes = {
     saveNewPlayer: PropTypes.func.isRequired,
+    player: PropTypes.object.isRequired,
+    putPlayer: PropTypes.func.isRequired,
   }
 
   state = {
     playerName: '',
     playerImage: '',
     playerPosition: '',
+    isEditing: false,
+  }
+
+  componentDidMount() {
+    const { player } = this.props;
+    if (player.name) {
+      this.setState({
+        playerName: player.name,
+        playerImage: player.imageUrl,
+        playerPosition: player.position,
+        isEditing: true,
+      });
+    }
   }
 
   savePlayer = (e) => {
@@ -26,6 +41,19 @@ class PlayerForm extends React.Component {
       uid: authData.getUid(),
     };
     saveNewPlayer(newPlayer);
+  }
+
+  updatePlayer = (e) => {
+    e.preventDefault();
+    const { playerName, playerImage, playerPosition } = this.state;
+    const { player, putPlayer } = this.props;
+    const updatedPlayer = {
+      name: playerName,
+      imageUrl: playerImage,
+      position: playerPosition,
+      uid: authData.getUid(),
+    };
+    putPlayer(player.id, updatedPlayer);
   }
 
   nameChange = (e) => {
@@ -44,7 +72,12 @@ class PlayerForm extends React.Component {
   }
 
   render() {
-    const { playerName, playerImage, playerPosition } = this.state;
+    const {
+      playerName,
+      playerImage,
+      playerPosition,
+      isEditing,
+    } = this.state;
     return (
       <div className="PlayerForm">
         <form className="col-6 offset-3">
@@ -81,7 +114,11 @@ class PlayerForm extends React.Component {
                 onChange={this.positionChange}
                 />
             </div>
-            <button className="btn btn-outline-success" onClick={this.savePlayer}>Save Player</button>
+            {
+              isEditing
+                ? <button className="btn btn-outline-success" onClick={this.updatePlayer}>Update Player</button>
+                : <button className="btn btn-outline-success" onClick={this.savePlayer}>Save Player</button>
+            }
         </form>
       </div>
     );
