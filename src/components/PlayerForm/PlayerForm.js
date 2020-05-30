@@ -9,6 +9,7 @@ class PlayerForm extends React.Component {
     saveNewPlayer: PropTypes.func.isRequired,
     player: PropTypes.object.isRequired,
     putPlayer: PropTypes.func.isRequired,
+    closeForm: PropTypes.func.isRequired,
   }
 
   state = {
@@ -78,9 +79,13 @@ class PlayerForm extends React.Component {
       playerPosition,
       isEditing,
     } = this.state;
+    const { closeForm } = this.props;
     return (
-      <div className="PlayerForm">
-        <form className="col-6 offset-3">
+      <div className="PlayerForm my-3">
+        <form className="py-3 col-6 offset-3 card d-flex flex-column justify-content-center">
+            <div className="form-header d-flex flex-row justify-content-start">
+              <button className="btn form-close-btn" onClick={closeForm}><i className="fas fa-times"></i></button>
+            </div>
             <div className="form-group">
                 <label htmlFor="player-name">Name</label>
                 <input
@@ -114,11 +119,13 @@ class PlayerForm extends React.Component {
                 onChange={this.positionChange}
                 />
             </div>
+            <div className="form-footer">
             {
               isEditing
                 ? <button className="btn btn-outline-success" onClick={this.updatePlayer}>Update Player</button>
                 : <button className="btn btn-outline-success" onClick={this.savePlayer}>Save Player</button>
             }
+            </div>
         </form>
       </div>
     );

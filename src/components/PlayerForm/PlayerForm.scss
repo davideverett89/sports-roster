@@ -1,3 +1,14 @@
+@import '../../styles/variables';
+
 .PlayerForm {
     display: block;
+    form {
+        border: 2px solid $teamPrimaryColor;
+        background-color: $teamSecondaryColor;
+        .form-header {
+            .form-close-btn {
+                background-color: $teamPrimaryColor;
+            }
+        }
+    }
 }
